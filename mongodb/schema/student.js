@@ -9,7 +9,7 @@ const StudentSchema = new Schema({
     age: Number,
     info: {
         type: ObjectId,
-        ref: 'info'
+        ref: 'Info'
     },
     meta: {
         createdAt:{

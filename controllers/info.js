@@ -22,7 +22,7 @@ export const saveInfo = async (ctx, next) => {
 }
 
 export const fetchInfo = async (ctx, next) => {
-    const infos = await info.find({});
+    const infos = await Info.find({});
 
     if (infos.length) {
         ctx.body = {
